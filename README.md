@@ -17,14 +17,14 @@ Common steps undertaken for pre-processing the dataset are as follows:
 
 ### Alogrithm Architecture :-
 
-![](/images/Algorithm_Architecture)
+![](/images/Algorithm_Architecture.PNG)
 
 
 Essence of the architecture is that **features (R,G,B intensity for each pixel) belonging to an image are multiplied with the weights (determined by the network by reducing the cost function) which when with added with a scalar known as bias (determined in the same fashion as that of weights) acts as an input to the sigmoid/tanh or function of that sorts.THe output of these functions is probability which can be used to classify the cat vs non cat image based on the threshold (usually 0.5) set by the modeler**.   
 
-Key steps involved are as follows:   
+`Key steps involved are as follows:`   
 
-   - Initialize the parameters , weights (w) and bias (b) of the model with zeros.  
+   - **Initialize the parameters , weights (w) and bias (b)** of the model with zeros.  
    - Compute the **Activation function (A) and the Final Cost (J) using Forward Propagation**.  
    - Compute the **gradients w.r.t the weights and the bias using Backward Propagation**.  
    - Learn the **parameters for the model by minimizing the cost** using the gradient descent update rule.  
